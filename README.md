@@ -54,3 +54,5 @@ IGALeagueChannelWebhooksURL=<League-Channel-Webhook-URL>
 # Disclaimer
 The creator of IGA-Bot, "Byoung-Ju Lee", is not a professional Python developer, so some parts of the code may be a little untidy — and there may well be a few bugs lurking about.
 If you spot anything odd or have suggestions, feel free to reach out via the IGA Discord.
+
+Feel free to reuse any of the scripts if they’re useful for your own Go communities.
