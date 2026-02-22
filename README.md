@@ -6,7 +6,7 @@ IGA-Bot is a small but it keeps an eye on online Go league games.
 
 # History
 
-IGA-Bot was created by "Byoung-Ju Lee" to reduce the amount of manual admin work involved in running the IGA online leagues — and to save a few sanity points along the way.
+IGA-Bot was created to reduce the amount of manual admin work involved in running the IGA online leagues — and to save a few sanity points along the way.
 
 # IGA League
 
@@ -51,3 +51,6 @@ BJChannelWebhooksURL=<Test-Channel-Webhook-URL>
 IGALeagueChannelWebhooksURL=<League-Channel-Webhook-URL>
 ```
 
+# Disclaimer
+The creator of IGA-Bot, "Byoung-Ju Lee", is not a professional Python developer, so some parts of the code may be a little untidy — and there may well be a few bugs lurking about.
+If you spot anything odd or have suggestions, feel free to reach out via the IGA Discord.
