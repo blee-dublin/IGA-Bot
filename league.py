@@ -7,7 +7,7 @@ import time
 from ogs import *
 from webhook import *
 
-checkFrequencyInSec = 120
+checkFrequencyInMin = 3
 checkedCnt = 0
 
 
@@ -51,19 +51,17 @@ def check_league_games():
         time.sleep(1)
         checkActiveGames(env.BJServerID)
 
-        '''
-        # Need to re-enable to check the league games every x mins
-        if checkedCnt % 3 == 1:
+        if checkedCnt % checkFrequencyInMin == 1:
             checkActiveGamesInGroup("A", a_group_players)
             checkActiveGamesInGroup("B", b_group_players)
             checkActiveGamesInGroup("C", c_group_players)
             checkActiveGamesInGroup("D", d_group_players)
-        elif checkedCnt % 3 == 2:
+        elif checkedCnt % checkFrequencyInMin == 2:
             checkActiveGamesInGroup("E", e_group_players)
             checkActiveGamesInGroup("F", f_group_players)
             checkActiveGamesInGroup("G", g_group_players)
             checkActiveGamesInGroup("H", h_group_players)
-        elif checkedCnt % 3 == 0:
+        elif checkedCnt % checkFrequencyInMin == 0:
             checkActiveGamesInGroup("I", i_group_players)
             checkActiveGamesInGroup("J", j_group_players)
             checkActiveGamesInGroup("K", k_group_players)
@@ -71,10 +69,10 @@ def check_league_games():
 
         print("=====================")
         print("checkedCnt = {}\n".format(checkedCnt)) 
-        '''
+
 
     checkedCnt += 1
-    timer = threading.Timer(checkFrequencyInSec, check_league_games)
+    timer = threading.Timer(checkFrequencyInMin * 60, check_league_games)
     timer.start()
 
 check_league_games()

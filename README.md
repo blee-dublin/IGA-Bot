@@ -35,3 +35,18 @@ When a game finishes, the bot will announce the result.
 ```$egd Kachanovskyi```
 
 Retrieves EGD details for players matching the given surname. 
+
+
+# How to use
+".env" file is required in the home directory of the Bot that contains the following details.
+
+```TOKEN=<Discord-Bot-Token>
+IGALeagueChannelID=<League-Channel-ID>
+BJBotTestChannelID=<Test-Chennel-ID>
+IGAServerID=<League-Server-ID>
+BJServerID=<Test-Server-ID>
+displayRank=T
+BJChannelWebhooksURL=<Test-Channel-Webhook-URL>
+IGALeagueChannelWebhooksURL=<League-Channel-Webhook-URL>```
+
+
