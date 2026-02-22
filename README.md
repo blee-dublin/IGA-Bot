@@ -1,12 +1,12 @@
 # IGA-Bot
 
-Online Go League Bot for the Irish Go Association Discord
+Online Go League Bot for the Irish Go Association Discord.
 
 IGA-Bot is a small but it keeps an eye on online Go league games.
 
 # History
 
-IGA-Bot was created by Byoung-Ju Lee to reduce the amount of manual admin work involved in running the IGA online leagues — and to save a few sanity points along the way.
+IGA-Bot was created by "Byoung-Ju Lee" to reduce the amount of manual admin work involved in running the IGA online leagues — and to save a few sanity points along the way.
 
 # IGA League
 
@@ -19,7 +19,7 @@ https://discord.gg/4vSnhjd
 # Features
 ## Display online game details
 
-(Primarily OGS, with support for KGS and IGS)
+(Primarily OGS, also support for KGS and IGS)
 
 ```$ogs https://online-go.com/game/84446223```
 
@@ -40,13 +40,14 @@ Retrieves EGD details for players matching the given surname.
 # How to use
 ".env" file is required in the home directory of the Bot that contains the following details.
 
-```TOKEN=<Discord-Bot-Token>
+```
+TOKEN=<Discord-Bot-Token>
 IGALeagueChannelID=<League-Channel-ID>
 BJBotTestChannelID=<Test-Chennel-ID>
 IGAServerID=<League-Server-ID>
 BJServerID=<Test-Server-ID>
 displayRank=T
 BJChannelWebhooksURL=<Test-Channel-Webhook-URL>
-IGALeagueChannelWebhooksURL=<League-Channel-Webhook-URL>```
-
+IGALeagueChannelWebhooksURL=<League-Channel-Webhook-URL>
+```
 
