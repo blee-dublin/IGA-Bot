@@ -276,6 +276,9 @@ def getOGSUsersLatestActiveGameID(group, userid, groupPlayers):
       if main_time > 0:
         main_time = round(main_time / 60, 0)
 
+      # The IGA league time control is 45 minutes of main time with 3 × 30-second byoyomi.
+      # This is currently hard-coded, as the bot was developed specifically for the IGA league.
+      # TODO: Make this configurable.
       if black_player_id in groupPlayers and white_player_id in groupPlayers and game_id != "" and time_control == "byoyomi" and main_time == 45:
         print("(INFO) Game ID: {}, black: {}, white: {}, main_time: {:.0f}, time_control: {}, speed: {}"
               .format(game_id, black_player_id, white_player_id, main_time, time_control, speed))
