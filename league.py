@@ -1,4 +1,4 @@
-## Check and report ongoing league games every a few mins
+# Background watcher for league games, running every few minutes.
 
 import env
 import threading
