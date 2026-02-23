@@ -1,4 +1,5 @@
 {
+  "_comment": "Configuration file mapping league groups (A–L) to lists of OGS user IDs",
   "a_group_players": [1091144, 1372872, 864425, 1388593, 841073],
   "b_group_players": [],
   "c_group_players": [],
