@@ -1,3 +1,5 @@
+# Entry point for the IGA Discord bot
+
 import env
 import discord
 from webhook import *
