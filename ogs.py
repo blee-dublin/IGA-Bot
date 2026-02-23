@@ -1,4 +1,4 @@
-## OGS and KGS related scripts
+# Handles OGS and SGF-based game logic (also used for KGS/IGS result parsing)
 
 import env
 import requests
