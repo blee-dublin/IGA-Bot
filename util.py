@@ -1,4 +1,4 @@
-## Some other utils
+# Misc helpers shared across scripts
 
 import datetime
 import time
