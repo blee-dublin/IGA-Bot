@@ -1,3 +1,5 @@
+# Loads configuration from a ".env" file using python-dotenv
+
 from dotenv import load_dotenv
 import os
 
