@@ -1,3 +1,5 @@
+# Very small wrapper around discord_webhook
+
 import time
 from discord_webhook import DiscordWebhook
 from util import *
