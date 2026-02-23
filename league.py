@@ -45,12 +45,14 @@ def check_league_games():
     # Assuming that nobody plays league games between midnight and 6am
     if checkedCnt != 0 and is_time_between(datetime.time(6,00), datetime.time(23,59)): # UTC
         print("=====================")
-        print("Checking every 2 mins") 
-        checkActiveGames(env.IGAServerID)
-        
+        print("Checking every a few mins") 
+
+        # Check the league game status, and report result if complete
+        checkActiveGames(env.IGAServerID)        
         time.sleep(1)
         checkActiveGames(env.BJServerID)
 
+        # Note: there's limit of the OGS API requests per a certain amount of time, so had to spread out the API calls
         if checkedCnt % checkFrequencyInMin == 1:
             checkActiveGamesInGroup("A", a_group_players)
             checkActiveGamesInGroup("B", b_group_players)
