@@ -1,4 +1,4 @@
-# Retrieve EGD (European Go Database) information 
+# EGD (European Go Database) lookup
 
 import requests
 import json
